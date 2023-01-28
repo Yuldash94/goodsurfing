@@ -1,0 +1,74 @@
+.header {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #212121;
+    align-self: center;
+}
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vulcan {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 60px;
+}
+
+.vulcan_logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('/public/img/vulcan.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.vulcan > h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #3DABF7;
+
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #DADADA;
+    gap: 20px;
+}
+
+.account_profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-left: 20px;
+    color: #212121;
+}
+.account_profile > h3{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.profile_avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('/public/img/account_img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
