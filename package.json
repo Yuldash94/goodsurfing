@@ -2,6 +2,7 @@
   "name": "yarar_map",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Yuldash94.github.io/goodsurfing",
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.2",
     "@testing-library/jest-dom": "^5.16.5",
