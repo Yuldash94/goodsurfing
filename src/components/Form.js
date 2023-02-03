@@ -1,16 +1,12 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import Maps from './Maps';
 import './Form.css'
 
 
 
 function Form() {
-  window.ymaps.ready(init);
-  function init() {
-      var suggestView = new window.ymaps.SuggestView('suggest');
-      var suggestView2 = new window.ymaps.SuggestView('suggest_2');
-  }
-  
+
+ 
   const [point, setPoint] = useState([])
   const adressRef = useRef()
   const cityRef = useRef()
@@ -61,11 +57,23 @@ function Form() {
     alert("Данные успешно отправлены")
     setPoint([])
   }
+
+  useEffect(() => {
+    window.ymaps.ready(init);
+    function init() {
+        let suggestView = new window.ymaps.SuggestView('suggest',{results: 10})
+        let suggestView2 = new window.ymaps.SuggestView('suggest_2')
+        suggestView.events.add('select')  
+        suggestView2.events.add('select')
+        suggestView.stopPropagation()
+      }
+      
+  },[])
   return (
     <div className='form'>
         <h1>Где вы находитесь или будете принимать волонтёров</h1>
         <p>Адрес</p>
-        <input type='text' ref={adressRef} id='suggest' onChange={() => handleChangeAdress(adressRef.current.value)} onKeyDown={(e) => handleGetGeoAdress(adressRef, e) }/>
+        <input type='text' ref={adressRef} id='suggest' autoComplete='on' onChange={() => handleChangeAdress(adressRef.current.value)} onKeyDown={(e) => handleGetGeoAdress(adressRef, e) }/>
         <p>Ближайший к месту город</p>
         <input type='text' ref={cityRef} id='suggest_2' onChange={() => handleChangeCity(adressRef.current.value)} onKeyDown={(e) => handleGetGeoCity(cityRef, e) }/>
         <Maps point={point} API_key={API_key}/>

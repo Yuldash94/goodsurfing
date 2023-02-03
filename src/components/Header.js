@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className='header'>
         <div className='logo'>
-            <img src='./img/logo-1.png' alt='logo'></img>
+            <img src="./img/logo-1.png" alt='logo'></img>
             <img src='./img/logo.png' alt='logo'></img>
             <h3>RU</h3>
             <MdArrowDropDown/> 

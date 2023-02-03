@@ -62,7 +62,7 @@ function Navbar() {
       <div className='nav_support'>
           <div className='support_avatar'></div>
           <h3>Кристина</h3>
-          <p>Ваш персональный помощник по работе с системой</p>
+          <p>Ваш персональный помощник по работе с данной системой</p>
           <button className='support_button'>Написать</button>
           <p>E-mail <a href='mailto:support@goodsurfing.org'>support@goodsurfing.org</a></p>
       </div>
