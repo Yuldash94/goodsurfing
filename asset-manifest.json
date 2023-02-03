@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/goodsurfing/static/css/main.7dc5631e.css",
-    "main.js": "/goodsurfing/static/js/main.1ebe6ea2.js",
+    "main.js": "/goodsurfing/static/js/main.d9096a76.js",
     "static/media/account_img.jpg": "/goodsurfing/static/media/account_img.d5ed8eb64827c09a5dab.jpg",
     "static/media/support_img.png": "/goodsurfing/static/media/support_img.2f07b43feef176afb522.png",
     "index.html": "/goodsurfing/index.html",
     "main.7dc5631e.css.map": "/goodsurfing/static/css/main.7dc5631e.css.map",
-    "main.1ebe6ea2.js.map": "/goodsurfing/static/js/main.1ebe6ea2.js.map"
+    "main.d9096a76.js.map": "/goodsurfing/static/js/main.d9096a76.js.map"
   },
   "entrypoints": [
     "static/css/main.7dc5631e.css",
-    "static/js/main.1ebe6ea2.js"
+    "static/js/main.d9096a76.js"
   ]
 }
